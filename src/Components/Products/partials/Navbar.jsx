@@ -7,11 +7,11 @@ export default function NavbarTopBarPreview() {
   return (
     <>
       {/*<!-- Header --> */}
-      <header className="relative z-20 w-full after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full lg:after:hidden bg-[#efefef] font-inter">
+      <header className="fixed top-0 z-20 w-full after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full lg:after:hidden bg-[#efefef] font-inter">
         <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
           <nav
             aria-label="main navigation"
-            className="flex h-[5rem] items-center justify-between gap-1"
+            className="flex h-[4rem] items-center justify-between gap-1"
             role="navigation"
           >
             {/*      <!-- Brand logo --> */}

@@ -6,7 +6,8 @@ const Products = () => {
     {
       id: 1,
       ProductName: "Shivji - ma parvati",
-      MDFSize: "14 inch, 4 mm + ₹200",
+      MDFSize1: "Select None",
+      MDFSize2: "14 inch, 4 mm + ₹200",
       PriceLineThrough: "₹1,500.00",
       OriginalPrice: "₹1,149.00",
       FirstImage:
@@ -15,7 +16,8 @@ const Products = () => {
     {
       id: 2,
       ProductName: "Radha Krishna",
-      MDFSize: "14 inch, 4 mm + ₹200",
+      MDFSize1: "Select None",
+      MDFSize2: "14 inch, 4 mm + ₹200",
       PriceLineThrough: "₹1,500.00",
       OriginalPrice: "₹1,149.00",
       FirstImage:
@@ -24,7 +26,8 @@ const Products = () => {
     {
       id: 3,
       ProductName: "Jai Ganesh",
-      MDFSize: "14 inch, 4 mm + ₹200",
+      MDFSize1: "Select None",
+      MDFSize2: "14 inch, 4 mm + ₹200",
       PriceLineThrough: "₹1,500.00",
       OriginalPrice: "₹1,149.00",
       FirstImage:
@@ -33,7 +36,8 @@ const Products = () => {
     {
       id: 4,
       ProductName: "Gautam Budhha",
-      MDFSize: "14 inch, 4 mm + ₹200",
+      MDFSize1: "Select None",
+      MDFSize2: "14 inch, 4 mm + ₹200",
       PriceLineThrough: "₹1,500.00",
       OriginalPrice: "₹1,149.00",
       FirstImage:
@@ -42,7 +46,8 @@ const Products = () => {
     {
       id: 5,
       ProductName: "Shiv Ganga",
-      MDFSize: "14 inch, 4 mm + ₹200",
+      MDFSize1: "Select None",
+      MDFSize2: "14 inch, 4 mm + ₹200",
       PriceLineThrough: "₹1,500.00",
       OriginalPrice: "₹1,149.00",
       FirstImage:
@@ -51,7 +56,8 @@ const Products = () => {
     {
       id: 6,
       ProductName: "Sankat Mochan Hanuman",
-      MDFSize: "14 inch, 4 mm + ₹200",
+      MDFSize1: "Select None",
+      MDFSize2: "14 inch, 4 mm + ₹200",
       PriceLineThrough: "₹1,500.00",
       OriginalPrice: "₹1,149.00",
       FirstImage:
@@ -60,7 +66,8 @@ const Products = () => {
     {
       id: 7,
       ProductName: "Mahakal",
-      MDFSize: "14 inch, 4 mm + ₹200",
+      MDFSize1: "Select None",
+      MDFSize2: "14 inch, 4 mm + ₹200",
       PriceLineThrough: "₹1,500.00",
       OriginalPrice: "₹1,149.00",
       FirstImage:
@@ -69,7 +76,8 @@ const Products = () => {
     {
       id: 8,
       ProductName: "Universe Time",
-      MDFSize: "14 inch, 4 mm + ₹200",
+      MDFSize1: "Select None",
+      MDFSize2: "14 inch, 4 mm + ₹200",
       PriceLineThrough: "₹1,500.00",
       OriginalPrice: "₹1,149.00",
       FirstImage:
@@ -78,7 +86,8 @@ const Products = () => {
     {
       id: 9,
       ProductName: "Shree Ganesh",
-      MDFSize: "14 inch, 4 mm + ₹200",
+      MDFSize1: "Select None",
+      MDFSize2: "14 inch, 4 mm + ₹200",
       PriceLineThrough: "₹1,500.00",
       OriginalPrice: "₹1,149.00",
       FirstImage:
@@ -87,7 +96,8 @@ const Products = () => {
     {
       id: 10,
       ProductName: "Red - Blue Rangoli",
-      MDFSize: "14 inch, 4 mm + ₹200",
+      MDFSize1: "Select None",
+      MDFSize2: "14 inch, 4 mm + ₹200",
       PriceLineThrough: "₹1,500.00",
       OriginalPrice: "₹1,149.00",
       FirstImage:
@@ -96,7 +106,8 @@ const Products = () => {
     {
       id: 11,
       ProductName: "Yellow - Sky Blue Rangoli",
-      MDFSize: "14 inch, 4 mm + ₹200",
+      MDFSize1: "Select None",
+      MDFSize2: "14 inch, 4 mm + ₹200",
       PriceLineThrough: "₹1,500.00",
       OriginalPrice: "₹1,149.00",
       FirstImage:
@@ -116,7 +127,7 @@ const Products = () => {
       <NavbarTopBarPreview />
       <div className="products w-full px-4 lg:px-20">
         {details.map((prod) => (
-          <div className="product mt-10 lg:mt-20" key={prod.ProductName}>
+          <div className="product mt-24 mb-10 lg:my-24 lg:mb-10" key={prod.ProductName}>
             <div className="P_image mt-5 w-full overflow-hidden h-[15rem] lg:h-[40rem]">
               <img
                 className="w-full h-full rounded-[20px] object-cover object-center"
@@ -129,28 +140,29 @@ const Products = () => {
                 <h1 className="text-[20px] lg:text-[28px] font-inter font-medium">
                   {prod.ProductName}
                 </h1>
-                <h1 className="text-[15px] lg:text-[17px] mt-2 font-inter font-medium tracking-tight">
+                <h1 className="text-[15px] lg:text-[17px] font-inter font-medium tracking-tight">
                   Size: 12 inch, 4 mm
                 </h1>
                 <select
-                  className="select-blue mt-4 outline-none font-inter tracking-tight bg-[#f2f2f2] p-2 lg:p-3 rounded-[10px]"
+                  className="select-blue mt-4 lg:mt-6 outline-none font-inter tracking-tight bg-[#f2f2f2] py-3 px-1  rounded-[10px]"
                   name=""
                   id=""
                 >
                   <option className="font-inter font-medium" value="">
                     More size
                   </option>
-                  <option value="">{prod.MDFSize}</option>
+                  <option value="">{prod.MDFSize1}</option>
+                  <option value="">{prod.MDFSize2}</option>
                 </select>
               </div>
-              <div className="right_side flex flex-col items-end">
+              <div className="right_side flex flex-col items-end justify-center">
                 <h1 className="text-[16px] lg:text-[21px] font-inter font-medium line-through text-[#747373]">
                   {prod.PriceLineThrough}
                 </h1>
                 <h1 className="text-[20px] lg:text-[28px] mt-1 font-inter font-medium">
                   {prod.OriginalPrice}
                 </h1>
-                <button className="border-[1.4px] px-4 text-[13px] lg:text-[18px] mt-2 lg:mt-6 lg:px-6 font-semibold py-2 rounded-full border-[#000000]">
+                <button className="border-[1.5px] px-4 text-[13px] hover:bg-black hover:text-white active:bg-black active:text-white duration-300 lg:text-[18px] mt-3 lg:mt-6 lg:px-6 font-semibold py-3 rounded-full border-[#000000]">
                   Add to Cart
                 </button>
               </div>
